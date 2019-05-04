@@ -10,6 +10,16 @@
 		9186C185227DBD0E003FBF97 /* AURoadie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9186C17B227DBD0E003FBF97 /* AURoadie.framework */; };
 		9186C18A227DBD0E003FBF97 /* AURoadieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186C189227DBD0E003FBF97 /* AURoadieTests.swift */; };
 		9186C18C227DBD0E003FBF97 /* AURoadie.h in Headers */ = {isa = PBXBuildFile; fileRef = 9186C17E227DBD0E003FBF97 /* AURoadie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9186C1B8227DBE4B003FBF97 /* AURoadieExampleAUAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 9186C1B7227DBE4B003FBF97 /* AURoadieExampleAUAudioUnit.m */; };
+		9186C1BA227DBE4B003FBF97 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186C1B9227DBE4B003FBF97 /* AudioUnitViewController.swift */; };
+		9186C1BD227DBE4B003FBF97 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9186C1BB227DBE4B003FBF97 /* MainInterface.storyboard */; };
+		9186C1CE227DBE69003FBF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186C1CD227DBE69003FBF97 /* AppDelegate.swift */; };
+		9186C1D0227DBE69003FBF97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9186C1CF227DBE69003FBF97 /* ViewController.swift */; };
+		9186C1D3227DBE69003FBF97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9186C1D1227DBE69003FBF97 /* Main.storyboard */; };
+		9186C1D5227DBE69003FBF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9186C1D4227DBE69003FBF97 /* Assets.xcassets */; };
+		9186C1D8227DBE69003FBF97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9186C1D6227DBE69003FBF97 /* LaunchScreen.storyboard */; };
+		9186C1DD227DBE99003FBF97 /* AURoadie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9186C17B227DBD0E003FBF97 /* AURoadie.framework */; };
+		9186C1DE227DBE99003FBF97 /* AURoadie.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9186C17B227DBD0E003FBF97 /* AURoadie.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +30,28 @@
 			remoteGlobalIDString = 9186C17A227DBD0E003FBF97;
 			remoteInfo = AURoadie;
 		};
+		9186C1DF227DBE99003FBF97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9186C172227DBD0E003FBF97 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9186C17A227DBD0E003FBF97;
+			remoteInfo = AURoadie;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9186C1E1227DBE99003FBF97 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9186C1DE227DBE99003FBF97 /* AURoadie.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9186C17B227DBD0E003FBF97 /* AURoadie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AURoadie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +60,20 @@
 		9186C184227DBD0E003FBF97 /* AURoadieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AURoadieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9186C189227DBD0E003FBF97 /* AURoadieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AURoadieTests.swift; sourceTree = "<group>"; };
 		9186C18B227DBD0E003FBF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9186C1B4227DBE4B003FBF97 /* AURoadieExampleAU.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AURoadieExampleAU.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9186C1B6227DBE4B003FBF97 /* AURoadieExampleAUAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AURoadieExampleAUAudioUnit.h; sourceTree = "<group>"; };
+		9186C1B7227DBE4B003FBF97 /* AURoadieExampleAUAudioUnit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AURoadieExampleAUAudioUnit.m; sourceTree = "<group>"; };
+		9186C1B9227DBE4B003FBF97 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
+		9186C1BC227DBE4B003FBF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		9186C1BE227DBE4B003FBF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9186C1BF227DBE4B003FBF97 /* AURoadieExampleAU-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AURoadieExampleAU-Bridging-Header.h"; sourceTree = "<group>"; };
+		9186C1CB227DBE69003FBF97 /* AURoadieExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AURoadieExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9186C1CD227DBE69003FBF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9186C1CF227DBE69003FBF97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9186C1D2227DBE69003FBF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9186C1D4227DBE69003FBF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9186C1D7227DBE69003FBF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9186C1D9227DBE69003FBF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +92,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9186C1B1227DBE4B003FBF97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9186C1C8227DBE69003FBF97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9186C1DD227DBE99003FBF97 /* AURoadie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +115,8 @@
 			children = (
 				9186C17D227DBD0E003FBF97 /* AURoadie */,
 				9186C188227DBD0E003FBF97 /* AURoadieTests */,
+				9186C1B5227DBE4B003FBF97 /* AURoadieExampleAU */,
+				9186C1CC227DBE69003FBF97 /* AURoadieExampleApp */,
 				9186C17C227DBD0E003FBF97 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +126,8 @@
 			children = (
 				9186C17B227DBD0E003FBF97 /* AURoadie.framework */,
 				9186C184227DBD0E003FBF97 /* AURoadieTests.xctest */,
+				9186C1B4227DBE4B003FBF97 /* AURoadieExampleAU.appex */,
+				9186C1CB227DBE69003FBF97 /* AURoadieExampleApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +148,32 @@
 				9186C18B227DBD0E003FBF97 /* Info.plist */,
 			);
 			path = AURoadieTests;
+			sourceTree = "<group>";
+		};
+		9186C1B5227DBE4B003FBF97 /* AURoadieExampleAU */ = {
+			isa = PBXGroup;
+			children = (
+				9186C1B6227DBE4B003FBF97 /* AURoadieExampleAUAudioUnit.h */,
+				9186C1B7227DBE4B003FBF97 /* AURoadieExampleAUAudioUnit.m */,
+				9186C1B9227DBE4B003FBF97 /* AudioUnitViewController.swift */,
+				9186C1BB227DBE4B003FBF97 /* MainInterface.storyboard */,
+				9186C1BE227DBE4B003FBF97 /* Info.plist */,
+				9186C1BF227DBE4B003FBF97 /* AURoadieExampleAU-Bridging-Header.h */,
+			);
+			path = AURoadieExampleAU;
+			sourceTree = "<group>";
+		};
+		9186C1CC227DBE69003FBF97 /* AURoadieExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				9186C1CD227DBE69003FBF97 /* AppDelegate.swift */,
+				9186C1CF227DBE69003FBF97 /* ViewController.swift */,
+				9186C1D1227DBE69003FBF97 /* Main.storyboard */,
+				9186C1D4227DBE69003FBF97 /* Assets.xcassets */,
+				9186C1D6227DBE69003FBF97 /* LaunchScreen.storyboard */,
+				9186C1D9227DBE69003FBF97 /* Info.plist */,
+			);
+			path = AURoadieExampleApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +226,42 @@
 			productReference = 9186C184227DBD0E003FBF97 /* AURoadieTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9186C1B3227DBE4B003FBF97 /* AURoadieExampleAU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9186C1C3227DBE4B003FBF97 /* Build configuration list for PBXNativeTarget "AURoadieExampleAU" */;
+			buildPhases = (
+				9186C1B0227DBE4B003FBF97 /* Sources */,
+				9186C1B1227DBE4B003FBF97 /* Frameworks */,
+				9186C1B2227DBE4B003FBF97 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AURoadieExampleAU;
+			productName = AURoadieExampleAU;
+			productReference = 9186C1B4227DBE4B003FBF97 /* AURoadieExampleAU.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		9186C1CA227DBE69003FBF97 /* AURoadieExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9186C1DA227DBE69003FBF97 /* Build configuration list for PBXNativeTarget "AURoadieExampleApp" */;
+			buildPhases = (
+				9186C1C7227DBE69003FBF97 /* Sources */,
+				9186C1C8227DBE69003FBF97 /* Frameworks */,
+				9186C1C9227DBE69003FBF97 /* Resources */,
+				9186C1E1227DBE99003FBF97 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9186C1E0227DBE99003FBF97 /* PBXTargetDependency */,
+			);
+			name = AURoadieExampleApp;
+			productName = AURoadieExampleApp;
+			productReference = 9186C1CB227DBE69003FBF97 /* AURoadieExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +278,12 @@
 					9186C183227DBD0E003FBF97 = {
 						CreatedOnToolsVersion = 10.2;
 					};
+					9186C1B3227DBE4B003FBF97 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					9186C1CA227DBE69003FBF97 = {
+						CreatedOnToolsVersion = 10.2;
+					};
 				};
 			};
 			buildConfigurationList = 9186C175227DBD0E003FBF97 /* Build configuration list for PBXProject "AURoadie" */;
@@ -160,6 +292,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 9186C171227DBD0E003FBF97;
 			productRefGroup = 9186C17C227DBD0E003FBF97 /* Products */;
@@ -168,6 +301,8 @@
 			targets = (
 				9186C17A227DBD0E003FBF97 /* AURoadie */,
 				9186C183227DBD0E003FBF97 /* AURoadieTests */,
+				9186C1B3227DBE4B003FBF97 /* AURoadieExampleAU */,
+				9186C1CA227DBE69003FBF97 /* AURoadieExampleApp */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +319,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9186C1B2227DBE4B003FBF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9186C1BD227DBE4B003FBF97 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9186C1C9227DBE69003FBF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9186C1D8227DBE69003FBF97 /* LaunchScreen.storyboard in Resources */,
+				9186C1D5227DBE69003FBF97 /* Assets.xcassets in Resources */,
+				9186C1D3227DBE69003FBF97 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +358,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9186C1B0227DBE4B003FBF97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9186C1B8227DBE4B003FBF97 /* AURoadieExampleAUAudioUnit.m in Sources */,
+				9186C1BA227DBE4B003FBF97 /* AudioUnitViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9186C1C7227DBE69003FBF97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9186C1D0227DBE69003FBF97 /* ViewController.swift in Sources */,
+				9186C1CE227DBE69003FBF97 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -213,7 +384,39 @@
 			target = 9186C17A227DBD0E003FBF97 /* AURoadie */;
 			targetProxy = 9186C186227DBD0E003FBF97 /* PBXContainerItemProxy */;
 		};
+		9186C1E0227DBE99003FBF97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9186C17A227DBD0E003FBF97 /* AURoadie */;
+			targetProxy = 9186C1DF227DBE99003FBF97 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9186C1BB227DBE4B003FBF97 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9186C1BC227DBE4B003FBF97 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		9186C1D1227DBE69003FBF97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9186C1D2227DBE69003FBF97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9186C1D6227DBE69003FBF97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9186C1D7227DBE69003FBF97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		9186C18D227DBD0E003FBF97 /* Debug */ = {
@@ -424,6 +627,82 @@
 			};
 			name = Release;
 		};
+		9186C1C4227DBE4B003FBF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = APB6HJW5WB;
+				INFOPLIST_FILE = AURoadieExampleAU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperbarn.AURoadie.AURoadieExampleAU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AURoadieExampleAU/AURoadieExampleAU-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9186C1C5227DBE4B003FBF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = APB6HJW5WB;
+				INFOPLIST_FILE = AURoadieExampleAU/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperbarn.AURoadie.AURoadieExampleAU;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AURoadieExampleAU/AURoadieExampleAU-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9186C1DB227DBE69003FBF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = APB6HJW5WB;
+				INFOPLIST_FILE = AURoadieExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperbarn.AURoadieExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9186C1DC227DBE69003FBF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = APB6HJW5WB;
+				INFOPLIST_FILE = AURoadieExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyperbarn.AURoadieExampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -450,6 +729,24 @@
 			buildConfigurations = (
 				9186C193227DBD0E003FBF97 /* Debug */,
 				9186C194227DBD0E003FBF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9186C1C3227DBE4B003FBF97 /* Build configuration list for PBXNativeTarget "AURoadieExampleAU" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9186C1C4227DBE4B003FBF97 /* Debug */,
+				9186C1C5227DBE4B003FBF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9186C1DA227DBE69003FBF97 /* Build configuration list for PBXNativeTarget "AURoadieExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9186C1DB227DBE69003FBF97 /* Debug */,
+				9186C1DC227DBE69003FBF97 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
